@@ -1,0 +1,238 @@
+:root {
+    --main: rgba(244, 244, 244, 0.97);
+    --sticky-background: #F5FFBD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* - Mobile Styling */
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    padding: 23.5px;
+    background-color: var(--sticky-background);
+    font-weight: lighter;
+}
+
+.sticky p {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #left-container {
+        background-color: var(--main);
+        background-image: url(./imgs/leftBackgroundImg.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 700px;
+    }
+
+    #links-container {
+        display: none;
+    }
+
+}
+
+#right-container {
+    background-color: var(--main);
+    padding: 50px 5% 50px;
+    text-align: center;
+}
+
+#images-container #image-1 {
+    margin-top: 40px;
+    margin-right: 20%;
+    margin-bottom: 15px;
+}
+
+#images-container #image-2 {
+    margin-bottom: 40px;
+    margin-left: 20%;
+    margin-top: 15px;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input[type=email] {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+    background-color: var(--main);
+    place-content: 50%;
+    text-align: center;
+}
+
+input[type=email]:focus {
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #116DFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #0846E5;
+}
+
+.right-link { display: none; }
+
+#right-container h1 {
+    font-family: Fraunces;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+#left-container h1 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 24px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* - Desktop Styling */
+
+    #left-container h1 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: lighter;
+        padding-left: 50px;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    #right-container h1 {
+        font-family: Fraunces;
+        font-size: 72px;
+        font-weight: 300;
+    }
+
+    #right-container p {
+        font-family: Fraunces;
+        font-size: 24px;
+        font-weight: 200;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #left-container {
+        background-color: var(--main);
+        background-image: url(./imgs/leftBackgroundImg.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+
+    #right-container {
+        background-color: var(--main);
+        padding: 50px 20% 20%;
+        text-align: center;
+    }
+
+    form {
+        text-align: justify;
+    }
+
+    input[type=email] {
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid black;
+        width: 95%;
+        background-color: var(--main);
+    }
+
+    div #inputs-container {
+        display: flex;
+    }
+
+    input[type=email]:focus {
+        outline: none;
+    }
+
+    input[type=submit] {
+        background-color: #116DFF;
+        padding: 10px 15px 10px 15px;
+        width: auto;
+        color: white;
+        font-size: 14px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    input[type=submit]:hover {
+        background-color: #0846E5;
+    }
+
+    #images-container {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 10%;
+    }
+
+    #images-container #image-1 {
+        width: auto;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+    
+    #images-container #image-2 {
+        width: auto;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+
+    #links-container {
+        position: absolute;
+        top: calc(50% - 100px);
+        left: 1%;
+    }
+
+    #links-container a {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .right-link {
+        display: block;
+        float: right;
+        text-decoration: none;
+        color: #0846E5;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+}
